@@ -11,21 +11,21 @@
 
 <body>
   <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-  <div class="accordeon" x-data="{estOuvert: 1}">
+  <div class="accordeon" x-data="{estOuvert: 0}">
     <section>
-      <button>bouton 1</button>
+      <button  @click="estOuvert = 1">bouton 1</button>
       <p x-show="estOuvert===1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dicta ratione, recusandae dignissimos,
         consequuntur commodi harum neque vitae vel voluptas, optio eum consectetur saepe fugit magnam aliquam accusamus
         repellendus eaque.</p>
     </section>
     <section>
-      <button>bouton 2</button>
+      <button @click="estOuvert = 2">bouton 2</button>
       <p x-show="estOuvert=== 2">Atque, officia culpa sint id magnam harum consectetur et consequatur accusantium, quis odio? In soluta hic
         inventore quae ducimus, tempora dicta voluptatum nihil suscipit quo. Maiores dolor enim itaque exercitationem!
       </p>
     </section>
     <section>
-      <button>bouton 3</button>
+      <button @click="estOuvert = 3">bouton 3</button>
       <p x-show="estOuvert===3">Sit ea dicta maxime. Est quia vero maiores itaque earum eligendi ducimus sint facere unde magni eaque commodi
         numquam corrupti obcaecati eum, delectus doloremque praesentium error. Quidem fugiat ad libero.</p>
     </section>
