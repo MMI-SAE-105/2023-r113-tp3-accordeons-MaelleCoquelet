@@ -14,19 +14,19 @@
   <h1>Accordéon avec <code>x-collapse</code></h1>
   <section x-data="{isOuvert: false}">
     <button aria-controls="firstP" @click="isOuvert = ! isOuvert">bouton 1</button>
-    <p id="firstP" x-show="isOuvert">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rerum tempora
+    <p id="firstP" x-show="isOuvert"  x-collapse>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rerum tempora
       consequatur quos, voluptatibus nostrum deserunt iusto iste eveniet veniam, nulla sapiente ipsa doloremque
       quisquam esse enim sed? Assumenda, adipisci.</p>
   </section>
   <section x-data="{isOuvert: false}">
     <button aria-controls="secondP" @click="isOuvert = ! isOuvert">bouton 2</button>
-    <p id="secondP" x-show="isOuvert">Voluptas laborum saepe ad quod numquam at provident officia minus, expedita
+    <p id="secondP" x-show="isOuvert" x-collapse>Voluptas laborum saepe ad quod numquam at provident officia minus, expedita
       reprehenderit accusantium blanditiis aspernatur ex ratione optio quos deserunt quo rerum quidem. Quos, rem
       cupiditate minima voluptatum voluptatem ab.</p>
   </section>
   <section x-data="{isOuvert: false}">
     <button aria-controls="thirdP" @click="isOuvert = ! isOuvert">bouton 3</button>
-    <p id="thirdP" x-show="isOuvert">Praesentium nesciunt molestias commodi aspernatur a voluptate itaque fuga ipsum
+    <p id="thirdP" x-show="isOuvert" x-collapse>Praesentium nesciunt molestias commodi aspernatur a voluptate itaque fuga ipsum
       tempora ullam. Deleniti eius cumque quae nemo eligendi et placeat, similique cupiditate vitae quaerat odio
       consequatur explicabo veritatis commodi nisi.</p>
   </section>
