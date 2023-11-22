@@ -55,7 +55,7 @@
   <h1>Accordéon horizontal</h1>
 
   <ul id="accordeon" x-data="{estOpen :0}">
-    <li :class="{actif:estOpen===1,}" @click="estOpen = 1">
+    <li :class="{actif:estOpen===1,}" @click="estOpen = (estOpen===1)?0:1">
       <figure>
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
@@ -64,7 +64,7 @@
         </figcaption>
       </figure>
     </li>
-    <li :class="{actif:estOpen===2,}" @click="estOpen = 2">
+    <li :class="{actif:estOpen===2,}" @click="estOpen = (estOpen===2)?0:2">
       <figure>
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
@@ -73,7 +73,7 @@
         </figcaption>
       </figure>
     </li>
-    <li :class="{actif:estOpen===3,}" @click="estOpen = 3">
+    <li :class="{actif:estOpen===3,}" @click="estOpen = (estOpen===3)?0:3">
       <figure>
         <img src="https://picsum.photos/100?random=3" alt="" width="102">
         <figcaption>
