@@ -24,19 +24,19 @@
       </li>
     </ul>
     <div>
-      <div role="tabpanel" x-show="ouvert === 1">
+      <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, itaque. Similique laudantium aliquam ipsam
           modi officiis. Sequi assumenda, unde at nisi, libero, veniam quis cumque consectetur illo suscipit ut quidem.
         </p>
       </div>
-      <div role="tabpanel" x-show="ouvert === 2">
+      <div role="tabpanel" :class="{actif:ouvert === 2,}">
         <h1>Panneau 2</h1>
         <p>Repudiandae perferendis aperiam quis saepe, labore necessitatibus pariatur hic iste quas eius aliquid atque!
           Tenetur, illo exercitationem facere incidunt eveniet, accusamus vero asperiores ducimus laudantium dolorum
           perferendis molestiae quae placeat.</p>
       </div>
-      <div role="tabpanel" x-show="ouvert === 3">
+      <div role="tabpanel" :class="{actif:ouvert === 3,}">
         <h1>Panneau 3</h1>
         <p>Accusantium corrupti harum quam tenetur modi? Eveniet illum explicabo, ipsa deleniti esse porro doloremque,
           voluptas fugiat animi minima ipsum vero iure. Ducimus illo doloremque fugit. Obcaecati quas consequuntur ipsam
