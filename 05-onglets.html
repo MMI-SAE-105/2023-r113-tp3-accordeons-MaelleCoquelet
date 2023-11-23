@@ -23,8 +23,8 @@
       margin: 10px;
       padding: 0px;
     }
-    
-    [role=tab]:hover{
+
+    [role=tab]:hover {
       cursor: pointer;
     }
 
@@ -36,6 +36,8 @@
     [role=tabpanel] {
       opacity: 0;
     }
+
+
   </style>
 </head>
 
@@ -43,13 +45,13 @@
   <h1>Onglets</h1>
   <div id="onglets" x-data="{ouvert : 1,}">
     <ul role="tablist">
-      <li class="actif" role="tab">
+      <li class="tabOpen" role="tab">
         Onglet 1
       </li>
-      <li role="tab">
+      <li class="tabOpen" role="tab">
         Onglet 2
       </li>
-      <li role="tab">
+      <li class="tabOpen" role="tab">
         Onglet 3
       </li>
     </ul>
