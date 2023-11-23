@@ -48,13 +48,13 @@
   <h1>Onglets</h1>
   <div id="onglets" x-data="{ouvert : 1,}">
     <ul role="tablist">
-      <li class="tabOpen" role="tab">
+      <li class="tabOpen" role="tab" @click="ouvert = (ouvert===1)?0:1">
         Onglet 1
       </li>
-      <li class="tabOpen" role="tab">
+      <li class="tabOpen" role="tab" @click="ouvert = (ouvert===2)?0:2">
         Onglet 2
       </li>
-      <li class="tabOpen" role="tab">
+      <li class="tabOpen" role="tab" @click="ouvert = (ouvert===3)?0:3">
         Onglet 3
       </li>
     </ul>
