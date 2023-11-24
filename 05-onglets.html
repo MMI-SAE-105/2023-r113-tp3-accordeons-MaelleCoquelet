@@ -14,8 +14,10 @@
       width: 400px;
     }
 
-    #onglet div>* {
+    #parentPanel>div {
       position: absolute;
+      top: 0;
+      left: 0;
     }
 
     li[role=tab] {
@@ -59,7 +61,7 @@
         Onglet 3
       </li>
     </ul>
-    <div>
+    <div id="parentPanel">
       <div role="tabpanel" :class="{actif:ouvert === 1,}">
         <h1>Panneau 1</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, itaque. Similique laudantium aliquam ipsam
