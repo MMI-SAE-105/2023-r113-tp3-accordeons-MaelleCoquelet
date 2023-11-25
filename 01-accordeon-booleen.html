@@ -10,23 +10,40 @@
 </head>
 
 <body>
+  <ul>
+    <li>
+      <a href="01-accordeon-booleen.html">Accordéon avec des booléens</a>
+    </li>
+    <li>
+      <a href="02-accordeon-nombre.html">Accordéon mémorisant par un nombre l'élèment ouvert</a>
+    </li>
+    <li>
+      <a href="03-accordeon-collapse.html">Accordéon avec <code>x-collapse</code></a>
+    </li>
+    <li><a href="04-accordeon-horizontal.html">Accordéon horizontal</a></li>
+    <li><a href="05-onglets.html">Onglets</a></li>
+  </ul>
+
   <h1>Accordéon avec des booléens</h1>
   <div class="accordeon">
     <section x-data="{isOpen: false}">
       <button aria-controls="pButton1" @click="isOpen = ! isOpen">bouton 1</button>
-      <p id="pButton1" x-show="isOpen" x-transition.opacity.duration.500ms>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti rerum tempora
+      <p id="pButton1" x-show="isOpen" x-transition.opacity.duration.500ms>Lorem ipsum dolor sit, amet consectetur
+        adipisicing elit. Deleniti rerum tempora
         consequatur quos, voluptatibus nostrum deserunt iusto iste eveniet veniam, nulla sapiente ipsa doloremque
         quisquam esse enim sed? Assumenda, adipisci.</p>
     </section>
     <section x-data="{isOpen: false}">
       <button aria-controls="pButton2" @click="isOpen = ! isOpen">bouton 2</button>
-      <p id="pButton2" x-show="isOpen" x-transition.opacity.duration.500ms>Voluptas laborum saepe ad quod numquam at provident officia minus, expedita
+      <p id="pButton2" x-show="isOpen" x-transition.opacity.duration.500ms>Voluptas laborum saepe ad quod numquam at
+        provident officia minus, expedita
         reprehenderit accusantium blanditiis aspernatur ex ratione optio quos deserunt quo rerum quidem. Quos, rem
         cupiditate minima voluptatum voluptatem ab.</p>
     </section>
     <section x-data="{isOpen: false}">
       <button aria-controls="pButton3" @click="isOpen = ! isOpen">bouton 3</button>
-      <p id="pButton3" x-show="isOpen" x-transition.opacity.duration.500ms>Praesentium nesciunt molestias commodi aspernatur a voluptate itaque fuga ipsum
+      <p id="pButton3" x-show="isOpen" x-transition.opacity.duration.500ms>Praesentium nesciunt molestias commodi
+        aspernatur a voluptate itaque fuga ipsum
         tempora ullam. Deleniti eius cumque quae nemo eligendi et placeat, similique cupiditate vitae quaerat odio
         consequatur explicabo veritatis commodi nisi.</p>
     </section>
